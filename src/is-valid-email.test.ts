@@ -34,14 +34,14 @@ const invalidEmails = [
 ];
 
 describe('Test email validation', () => {
-  it('Should be valid', () => {
-    validEmails.forEach((email) => {
+  validEmails.forEach((email) => {
+    it(`${email} - Should be valid`, () => {
       expect(isValidEmail(email)).toBe(true);
     });
   });
 
-  it('Should be invalid', () => {
-    invalidEmails.forEach((email) => {
+  invalidEmails.forEach((email) => {
+    it(`${email} - Should be invalid`, () => {
       expect(isValidEmail(email)).toBe(false);
     });
   });
