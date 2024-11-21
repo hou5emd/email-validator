@@ -1,5 +1,5 @@
 {
-  "name": "@hmd/email-validator",
+  "name": "@hou5emd/email-validator",
   "version": "1.0.0",
   "description": "JavaScript library for email validation",
   "main": "./dist/main.js",
@@ -10,7 +10,7 @@
     "e-mail",
     "mail"
   ],
-  "author": "hou5emd <andrandrey92@gmail.com",
+  "author": "hou5emd",
   "license": "MIT",
   "repository": {
     "type": "git",
