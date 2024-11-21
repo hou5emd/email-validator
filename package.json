@@ -19,9 +19,12 @@
   "bugs": {
     "url": "https://github.com/hou5emd/email-validator/issues"
   },
+  "files": [
+    "/dist"
+  ],
   "homepage": "https://github.com/hou5emd/email-validator",
   "scripts": {
-    "build": "rspack build && tsc ./src/index.ts --emitDeclarationOnly -d --outFile \"./dist/main.d.ts\"",
+    "build": "rspack build && tsc ./src/is-valid-email.ts --emitDeclarationOnly -d --outFile \"./dist/main.d.ts\"",
     "lint": "eslint src",
     "test": "jest"
   },

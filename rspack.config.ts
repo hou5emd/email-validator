@@ -3,7 +3,7 @@ import path from 'path'
 
 const config = defineConfig({
   entry: {
-    main: './src/index.ts',
+    main: './src/is-valid-email.ts',
   },
   resolve: {
     tsConfig: path.resolve(__dirname, './tsconfig.json'),

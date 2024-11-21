@@ -5,7 +5,7 @@
 
 # Dist
 node_modules
-
+test
 
 # IDE
 .vscode/*
