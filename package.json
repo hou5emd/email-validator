@@ -1,7 +1,25 @@
 {
-  "name": "rsbuild-vanilla-ts",
-  "private": true,
+  "name": "@hmd/email-validator",
   "version": "1.0.0",
+  "description": "JavaScript library for email validation",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "keywords": [
+    "email",
+    "validate",
+    "e-mail",
+    "mail"
+  ],
+  "author": "hou5emd <andrandrey92@gmail.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hou5emd/email-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hou5emd/email-validator/issues"
+  },
+  "homepage": "https://github.com/hou5emd/email-validator",
   "scripts": {
     "build": "rspack build && tsc ./src/index.ts --emitDeclarationOnly -d --outFile \"./dist/main.d.ts\"",
     "lint": "eslint src",
