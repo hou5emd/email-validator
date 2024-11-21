@@ -3,7 +3,7 @@ const disallowInName = /[-_.]{2,}/;
 const disallowInDomain = /(?:(^[-])|([-]$)|([-]{2,})|(_))/g;
 const disallowInEmail = /[\\/[\]{}|!?;:,#&$^\s]/;
 
-function isValidEmail(email: string): boolean {
+export function isValidEmail(email: string): boolean {
   if (email.length === 0 || email[0].match(disallowInStart) || email.match(disallowInEmail)) {
     return false;
   }

@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "useDefineForClassFields": true,
-
     "baseUrl": "src",
     "target": "es5",
     "experimentalDecorators": true,
@@ -21,11 +20,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "declaration": true,
-  },
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
   },
   "include": ["src", "*.mjs", "jest.config.js"]
 }

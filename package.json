@@ -24,7 +24,7 @@
   ],
   "homepage": "https://github.com/hou5emd/email-validator",
   "scripts": {
-    "build": "rspack build && tsc ./src/is-valid-email.ts --emitDeclarationOnly -d --outFile \"./dist/main.d.ts\"",
+    "build": "rspack build",
     "lint": "eslint src",
     "test": "jest"
   },
