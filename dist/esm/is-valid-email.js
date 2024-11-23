@@ -1,8 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isValidEmail = isValidEmail;
 var disallowInStart = /[-_\\/[\]{}|!?;:,.#&$@^]/;
 var disallowInName = /[-_.]{2,}/;
 var disallowInDomain = /(?:(^[-])|([-]$)|([-]{2,})|(_))/g;
 var disallowInEmail = /[\\/[\]{}|!?;:,#&$^\s]/;
-export function isValidEmail(email) {
+function isValidEmail(email) {
     if (email.length === 0 || email[0].match(disallowInStart) || email.match(disallowInEmail)) {
         return false;
     }
