@@ -1,6 +1,6 @@
 {
   "name": "@hou5emd/email-validator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JavaScript library for email validation",
   "types": "./dist/types/is-valid-email.d.ts",
   "keywords": [
