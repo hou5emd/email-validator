@@ -1,11 +1,22 @@
 # email-validator
 JavaScript library for email validation
 
+## Last stable release is `1.0.3`
+
 ## Usage
 
 ```typescript
 
-import { isValidEmail } from 'email-validator';
+import { isValidEmail } from '@hou5emd/email-validator';
+
+isValidEmail("test@email.com"); // true
+
+
+```
+
+```typescript
+
+const { isValidEmail } = require('@hou5emd/email-validator');
 
 isValidEmail("test@email.com"); // true
 
