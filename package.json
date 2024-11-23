@@ -1,9 +1,8 @@
 {
   "name": "@hou5emd/email-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript library for email validation",
-  "main": "./dist/main.js",
-  "types": "./dist/main.d.ts",
+  "types": "./dist/types",
   "keywords": [
     "email",
     "validate",
@@ -22,16 +21,23 @@
   "files": [
     "/dist"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/types/is-valid-email.d.ts",
+      "require": "./dist/cjs/is-valid-email.js",
+      "import": "./dist/esm/is-valid-email.js",
+      "default": "./dist/esm/is-valid-email.js"
+    }
+  },
   "homepage": "https://github.com/hou5emd/email-validator",
   "scripts": {
-    "build": "rspack build",
+    "build": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
+    "build:clean": "rm -rf ./dist",
     "lint": "eslint src",
     "test": "jest"
   },
   "devDependencies": {
     "@eslint/js": "^9.12.0",
-    "@rspack/cli": "^1.1.3",
-    "@rspack/core": "^1.1.3",
     "@stylistic/eslint-plugin": "^2.11.0",
     "@types/jest": "^29.5.14",
     "eslint": "^9.12.0",
