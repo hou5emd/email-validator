@@ -23,6 +23,10 @@ isValidEmail("test@email.com"); // true
 
 ```
 
+## Documentation
+
+- [RFC vs current validator comparison](docs/rfc-vs-current-validator.md) — what the RFC allows vs what `isValidEmail` checks
+
 ## Contribute
 
 Contributions welcome!
